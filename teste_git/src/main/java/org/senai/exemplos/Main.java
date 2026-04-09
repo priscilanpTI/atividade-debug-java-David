@@ -1,4 +1,4 @@
-package org.example;
+package org.senai.exemplos;
 
 import java.util.Scanner;
 
@@ -11,13 +11,13 @@ public class Main {
 
         double total= 10;
 
-        System.out.println("Digite um número:");
+        System.out.print("Digite um número: ");
         double num1 = ler.nextDouble();
 
-        System.out.println("Digite outro número:");
+        System.out.print("Digite outro número: ");
         double num2 = ler.nextDouble();
 
-        System.out.println("Digite a operaç\não:\n(+, -, / e x)");
+        System.out.print ("Digite a operação:(+, -, / e x)  ");
         String opera = ler.next();
 
         switch (opera) {
@@ -26,10 +26,11 @@ public class Main {
                 System.out.println("Resultado = "+total);
                 break;
             case "-":
-                total=num1/num2;
-                System.out.println("Resultado = "+total);
-            case "/":
                 total=num1-num2;
+                System.out.println("Resultado = "+total);
+                break;
+            case "/":
+                total=num1/num2;
                 System.out.println("Resultado = "+total);
                 break;
             case "*":
